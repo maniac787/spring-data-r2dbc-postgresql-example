@@ -1,63 +1,31 @@
 package com.bezkoder.spring.r2dbc.postgresql.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.data.annotation.Id;
 
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class Tutorial {
-  
-  @Id
-  private int id;
 
-  private String title;
+    @Id
+    private int id;
 
-  private String description;
+    private String title;
 
-  private boolean published;
+    private String description;
 
-  public Tutorial() {
+    private boolean published;
 
-  }
-
-  public Tutorial(String title, String description, boolean published) {
-    this.title = title;
-    this.description = description;
-    this.published = published;
-  }
-
-  public void setId(int id) {
-    this.id = id;
-  }
-  
-  public long getId() {
-    return id;
-  }
-
-  public String getTitle() {
-    return title;
-  }
-
-  public void setTitle(String title) {
-    this.title = title;
-  }
-
-  public String getDescription() {
-    return description;
-  }
-
-  public void setDescription(String description) {
-    this.description = description;
-  }
-
-  public boolean getPublished() {
-    return published;
-  }
-
-  public void setPublished(boolean isPublished) {
-    this.published = isPublished;
-  }
-
-  @Override
-  public String toString() {
-    return "Tutorial [id=" + id + ", title=" + title + ", desc=" + description + ", published=" + published + "]";
-  }
+    @Override
+    public String toString() {
+        return "Tutorial [id=" + id + ", title=" + title + ", desc=" + description + ", published=" + published + "]";
+    }
 
 }

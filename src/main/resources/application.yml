@@ -1,0 +1,24 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/testdb
+    username: postgres
+    password: admin123
+#  data:
+#    r2dbc:
+#      repositories:
+#        enabled: true
+
+springdoc:
+  show-actuator: false
+  swagger-ui:
+    enabled: ${USE_SWAGGER:true}
+    tags-sorter: alpha
+    operations-sorter: method
+    doc-expansion: false
+  override-with-generic-response: false
+  default-consumes-media-type: "application/json"
+  default-produces-media-type: "application/json"
+
+logging:
+  level:
+    org.springframework.web: DEBUG

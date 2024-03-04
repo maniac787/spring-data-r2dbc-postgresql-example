@@ -1,6 +1,8 @@
 # Spring Boot R2DBC + PostgreSQL example: CRUD Application
 
-Spring Boot R2DBC + PostgreSQL example - CRUD application that uses Spring Data Reactive (R2DBC) to interact with PostgreSQL database and Spring WebFlux for Reactive Rest API. You'll know:
+Spring Boot R2DBC + PostgreSQL example - CRUD application that uses Spring Data Reactive (R2DBC) to interact with
+PostgreSQL database and Spring WebFlux for Reactive Rest API. You'll know:
+
 - How to configure Spring Data Reactive, R2DBC to work with PostgreSQL Database
 - How to define Data Models and Repository interfaces
 - Way to create Spring Rest Controller to process HTTP requests
@@ -76,6 +78,11 @@ Run both Back-end & Front-end in one place:
 > [Integrate Vue.js with Spring Boot Rest API](https://www.bezkoder.com/integrate-vue-spring-boot/)
 
 ## Run Spring Boot application
+
 ```
 mvn spring-boot:run
 ```
+
+## OPEN API
+
+> http://localhost:8080/webjars/swagger-ui/index.html
